@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import '../styling/App.css';
 import Login from './login'
 import { getTokenFromRes } from './spotify';
 import User from './user';
@@ -31,8 +31,14 @@ function App() {
                     user: user
                 })
             });
+
+            spotify.getUserPlaylists().then((playlists)=>{
+                dispatch({
+                    type: 'SET_PLAYLISTS',
+                    playlists: playlists
+                })
+            })
         }
-        console.log('Token', token);
     }, []);
     return (
         <div className="app">
