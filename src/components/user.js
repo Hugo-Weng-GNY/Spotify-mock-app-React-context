@@ -1,9 +1,18 @@
 import React from 'react';
+import '../styling/user.css';
+import Sidebar from './sidebar';
+import Container from './userContainer';
+import Footer from './footer';
 
-export default function User() {
+export default function User({ spotify }) {
     return (
-        <div>
-            <h1>Welcome to Spotify</h1>
+        <div className="user">
+            <div className="user-container">
+                <Sidebar />
+                <Container />
+            </div>
+
+            <Footer/>
         </div>
     );
 }
