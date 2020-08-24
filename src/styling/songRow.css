@@ -4,6 +4,11 @@
     display: flex;
     align-items: center;
     color: white;
+    z-index: 100;
+}
+
+.song-row:last-of-type {
+    margin-bottom: 70px;
 }
 
 .song-row:hover {
