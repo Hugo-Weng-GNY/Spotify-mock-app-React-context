@@ -9,7 +9,7 @@ export default function User({ spotify }) {
         <div className="user">
             <div className="user-container">
                 <Sidebar />
-                <Container />
+                <Container spotify={spotify} />
             </div>
 
             <Footer/>

@@ -21,8 +21,8 @@ export default function Sidebar() {
             <strong className="sidebar-title">PLAYLIST</strong>
             <hr/>
 
-            {playlists?.items?.map(playlist=>(
-                <SideOption title={playlist.name}/>
+            {playlists?.items?.map((playlist, index)=>(
+                <SideOption key={index} title={playlist.name}/>
             ))}
         </div>
     )

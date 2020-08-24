@@ -3,5 +3,60 @@
     padding: 30px;
     height: 100vh;
     color: white;
+    overflow-y: overlay;
     background: linear-gradient( rgb(91, 87, 115), rgba(0,0,0,1));
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container-info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.container-info-text {
+    flex: 1;
+}
+
+.container-info > img {
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+}
+
+.container-info-text > h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.container-info-text > p {
+    font-size: 14px;
+}
+
+.container-icons {
+    display: flex;
+    align-items: center;
+}
+
+.container-icons > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.container-songs {
+    margin: 20px -30px;
+}
+
+.container-shuffle {
+    font-size: 80px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.container-shuffle:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
 }
